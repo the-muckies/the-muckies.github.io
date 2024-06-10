@@ -11,11 +11,8 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="./scss/styles.scss">
-    <style>
-      html {
-          scroll-behavior: smooth; /* Enables smooth scrolling */
-      }
-  </style>
+    <script defer src="./js/navlink.js"></script>
+    <script defer src="./js/sectionscroll.js"></script>
   </head>
   <body class="m-0 border-0">
          
@@ -32,25 +29,25 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#about-us" class="nav-link">About Us</a>
+              <a href="#about-us" class="nav-link text-black-50">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="#where-to-next" class="nav-link">Where To Next</a>
+              <a href="#where-to-next" class="nav-link text-black-50">Where To Next</a>
             </li>
             <li class="nav-item">
-              <a href="#our-supporters" class="nav-link">Our Supporters</a>
+              <a href="#our-supporters" class="nav-link text-black-50">Our Supporters</a>
             </li>
             <li class="nav-item">
-              <a href="#ride-diary" class="nav-link">Ride Diary</a>
+              <a href="#ride-diary" class="nav-link text-black-50">Ride Diary</a>
             </li>
             <li class="nav-item">
-              <a href="#faq" class="nav-link">FAQ</a>
+              <a href="#faq" class="nav-link text-black-50">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="#our-riders" class="nav-link">Our Riders</a>
+              <a href="#our-riders" class="nav-link text-black-50">Our Riders</a>
             </li>
             <li class="nav-item">
-              <a href="#contact-us" class="nav-link">Contact Us</a>
+              <a href="#contact-us" class="nav-link text-black-50">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -106,14 +103,15 @@
             <div class="col">
               <h1>Where To Next...</h1>
               <div>
-                <p class="lead text-start">Check out when and where our longer ride will be heading.</p>
+                <p class="lead text-start">Check out when and where we are heading next !</p>
               </div>
               <div class="text-start">
-                <h5>Date: 9am, 8th June (<span id="days"></span> Days, <span id="hours"></span> Hours, <span id="min"></span> Minutes, <span id="sec"></span> Seconds)</h5>
-                <h5>Destination: London</h5>
-                <h5>Distance (approx.): 50 miles</h5>
-                <h5>Ride Time (estimate): 7-8 hours</h5>
-                <p>Mainly towpath out to Weybridge, Wey Navigation to the Thames Path, then into London. Train back from Waterloo.</p>  
+                <h5>Title: Spa Day !</h5></h4>
+                <h5>Date: 9am, TBD July (<span id="days"></span> Days, <span id="hours"></span> Hours, <span id="min"></span> Minutes, <span id="sec"></span> Seconds)</h5>
+                <h5>Destination: Bath to Reading</h5>
+                <h5>Distance (approx.): 82 miles</h5>
+                <h5>Ride Time (estimate): 10 hours</h5>
+                <p>Train to Bath and a lovely jaunt back to Reading, then train back into Fleet.</p>  
               </div>
             </div>
             <div class="col text-center">
@@ -129,8 +127,9 @@
       <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-dark-subtle">
         <div class="container text-center pt-lg-5">
           <h1>Our Supporters</h1>
-          <div>
-            <p class="lead text-start">Check out some of the local businesses that provide support for our group.</p>
+          <div class="text-start">
+            <p class="lead">Check out some of the local businesses that provide support for our group.</p>
+            </p>A big <span class="display-6">THANK YOU</span> to these businesses for their continued support.</p>
           </div>          
           <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0">
@@ -141,19 +140,19 @@
                 <div class="card-body">
                   <h5 class="card-title">Professional IT Services for more than 20 years.</h5>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">Check out Metacom</a>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-header">
-                  Cantine - Coffee & Treats
+                  Your Business Here
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Friendly staff, classy decor, locally sourced coffee and cakes.</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Help us to help you</h5>
+                  <p class="card-text">With a simple description and link to you and your business.</p>
+                  <a href="#" class="btn btn-primary">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -163,15 +162,104 @@
       </div>
     </section>  
 
+    <!-- Ride Diary -->
     <section id="ride-diary" class="min-vh-100">
-      <div class="container-fluid d-flex align-items-center justify-content-center vh-100 bg-body-tertiary">
-        <div class="row">
-          <div class="col text-center">
-              <h1>Ride Diary</h1>
+      <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-body-tertiary">
+        <div class="container text-center pt-lg-5">
+          <h1>Ride Diary</h1>
+          <div class="text-start">
+            <p class="lead ">
+              Here is a list of our past and planned rides.</p>
+            <p>
+              If you are interested in coming along, reach out to us on our WhatsApp Group.
+            </p>      
+          </div>   
+          <div>
+            <table class="table table-dark table-striped table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Miles</th>
+                  <th scope="col">Ride Time</th>
+                  <th scope="col">Notes</th>
+  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>17/Feb/24</td>
+                  <td>Lock, Stock & Barrel</td>
+                  <td>Bisley</td>
+                  <td>27</td>
+                  <td>3.5hrs</td>
+                  <td>Easy going along TowPath. This is a longer piece of text to see how the columns expand.</td>
+  
+                </tr>
+                <tr>
+                  <td>09/Mar/24</td>
+                  <td>War of the Worlds</td>
+                  <td>Woking</td>
+                  <td>35</td>
+                  <td>4.5hrs</td>
+                  <td>Easy going along TowPath.</td>
+                </tr>
+                <tr>
+                  <td>13/Apr/24</td>
+                  <td>Rags to Riches</td>
+                  <td>Weybridge</td>
+                  <td>48</td>
+                  <td>6hrs</td>
+                  <td>Easy going along TowPath.</td>
+                </tr>
+                <tr>
+                  <td>11/May/24</td>
+                  <td>Burnt Cakes !</td>
+                  <td>Winchester</td>
+                  <td>40</td>
+                  <td>5-6hrs</td>
+                  <td>Easy going along TowPath.</td>
+                </tr>
+                <tr>
+                  <td>08/Jun/24</td>
+                  <td>City Slickers</td>
+                  <td>London</td>
+                  <td>50</td>
+                  <td>7-8hrs</td>
+                  <td>Easy going along TowPath.</td>
+                </tr>
+                <tr class="table-danger">
+                <td>xx/Jul/24</td>
+                  <td>Spa Day !</td>
+                  <td>Bath to Reading</td>
+                  <td>82</td>
+                  <td>10hrs</td>
+                  <td>Easy going along TowPath.</td>
+                </tr>
+                <tr>
+                  <td>/Aug/24</td>
+                  <td>DDOTTS</td>
+                  <td>Guildford to Shoreham-by-Sea</td>
+                  <td>78</td>
+                  <td>10hrs</td>
+                  <td>Easy going along TowPath.</td>
+                </tr>
+                <tr>
+                  <td>/Sep/24</td>
+                  <td>Alice in Wonderland</td>
+                  <td>Guildford</td>
+                  <td>38</td>
+                  <td>6hrs</td>
+                  <td>Easy going along TowPath.</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
         </div>
       </div>
-    </section>  
+    </section>   
 
     <!-- FAQ Section -->
     <section id="faq" class="min-vh-100">
@@ -244,7 +332,7 @@
               >
                 <div class="accordion-body">
                   We usually meet up from xx to yy on zz.
-                  Some rides are scheduled to start at different times tom this, please see the Ride Diary for specifics.
+                  Some rides are scheduled to start at different times from this, please see the Ride Diary for specifics.
                 </div>
               </div>
             </div>
@@ -297,19 +385,92 @@
             </div>
           </div>
         </div>
-    </section>        </div>
-      </div>
-    </section>   
+    </section> 
 
+    <!-- Our Riders -->
     <section id="our-riders" class="min-vh-100">
-      <div class="container d-flex align-items-center justify-content-center vh-100 bg-body-tertiary">
-        <div class="row">
-          <div class="col text-center">
-              <h1>Our Riders</h1>
+      <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-body-tertiary">
+        <div class="container text-center pt-lg-5">
+          <h1>Our Riders</h1>
+          <div class="text-start">
+            <p class="lead ">
+              Here are a few of our regular Muckies.</p>
+            <p>
+              If this sounds like a group for you and you are interested in coming along, reach out to us on our WhatsApp Group.
+            </p>      
+          </div>   
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/11.jpg"
+                    class="rounded-circle mb-3"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3">John Doe</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/11.jpg"
+                    class="rounded-circle mb-3"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3">Jane Doe</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/12.jpg"
+                    class="rounded-circle mb-3"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3">Steve Smith</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/12.jpg"
+                    class="rounded-circle mb-3"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3">Sara Smith</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section> 
+    </section>  
 
     <section id="contact-us" class="min-vh-100">
       <div class="container-fluid d-flex align-items-center justify-content-center vh-100 bg-dark-subtle">

@@ -1,11 +1,16 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-link {
     position: relative;
-  }
+}
   
-  .nav-link::after {
+.nav-link::after {
     opacity: 0;
     transition: all 0.2s;
     height: 2px;
@@ -14,9 +19,14 @@
     position: absolute;
     bottom: 0;
     left: 0;
-  }
+}
   
-  .nav-link:hover::after {
+.nav-link:hover::after {
     content: '';
     opacity: 1;
-  }
+}
+
+.active {
+  color: white;
+  background-color: black;
+}
