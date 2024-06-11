@@ -30,3 +30,29 @@ html {
   color: white;
   font-weight: 700;
 }
+
+.variable-height-section {
+    height: auto;
+    min-height: 100vh; /* Optional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .hero-section {
+    height: 110vh; /* default height for other sections */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure the overlay can be positioned */
+    color: black; /* Ensure text is readable on dark overlay */
+  }
+
+  .hero-section.bg-primary {
+    background-image: url('../img/hero-bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
