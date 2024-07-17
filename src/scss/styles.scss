@@ -3,148 +3,60 @@
 
 
 // Custom CSS 
-:root {
-  --primary-color: #228B22;
-  --secondary-color: #87CEEB;
-  --accent-color: #FF4500;
-  --light-bg: #FFFFFF;
-  --light-text: #333333;
-  --dark-bg: #121212;
-  --dark-text: #E0E0E0;
-  --navbar-light-bg: #4682B4;
-  --navbar-dark-bg: #121212;
-  --navbar-light-text: #FFFFFF;
-  --navbar-dark-text: #E0E0E0;
-  --hero-light-bg: #228B22;
-  --hero-dark-bg: #4682B4;
-  --hero-light-text: #FFFFFF;
-  --hero-dark-text: #E0E0E0;
-  --section-light-bg1: #FFFFFF;
-  --section-light-bg2: #32CD32;
-  --section-dark-bg1: #121212;
-  --section-dark-bg2: #FF4500;
-}
-
-
-/* Font Families */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-p, a, li {
-  font-family: 'Roboto', sans-serif;
-}
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-// Light and Dark Modes
-/* Light Mode */
-body {
-  background-color: var(--light-bg);
-  color: var(--light-text);
-}
-
-.navbar, .footer {
-  background-color: var(--navbar-light-bg);
-  color: var(--navbar-light-text);
-}
-
-.hero-section {
-  background-color: var(--hero-light-bg);
-  color: var(--hero-light-text);
-}
-
-.odd-sections {
-  background-color: var(--section-light-bg1);
-  color: var(--light-text);
-}
-
-.even-sections {
-  background-color: var(--section-light-bg2);
-  color: var(--hero-light-text);
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
-}
-
-body.dark-mode .navbar {
-  background-color: var(--navbar-dark-bg);
-  color: var(--navbar-dark-text);
-}
-
-body.dark-mode .hero-section {
-  background-color: var(--hero-dark-bg);
-  color: var(--hero-dark-text);
-}
-
-body.dark-mode .odd-sections {
-  background-color: var(--section-dark-bg1);
-  color: var(--dark-text);
-}
-
-body.dark-mode .even-sections {
-  background-color: var(--section-dark-bg2);
-  color: var(--section-dark-bg1);
-}
-// ----------------------------------------------------------- //
 .nav-link {
-    position: relative;
+  position: relative;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: var(--bs-warning) !important;
 }
   
 .nav-link::after {
-    opacity: 0;
-    transition: all 0.2s;
-    height: 2px;
-    width: 100%;
-    background-color: darkcyan;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: var(--bs-warning);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
   
 .nav-link:hover::after {
-    content: '';
-    opacity: 1;
-}
-
-.active {
-  font-weight: 700;
+  content: '';
+  opacity: 1;
 }
 
 .variable-height-section {
-    height: auto;
-    min-height: 100vh; /* Optional */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
+  height: auto;
+  min-height: 100vh; /* Optional */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
 
-  .hero-section {
-    height: 110vh; /* default height for other sections */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Ensure the overlay can be positioned */
-    color: black; /* Ensure text is readable on dark overlay */
-  }
+.hero-section {
+  height: 100vh; /* default height for other sections */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure the overlay can be positioned */
+}
 
-  .hero-section.bg-primary {
-    background-image: url('../img/hero-bg.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-
-
-
+.hero-section.bg-primary {
+  background-image: url('../img/dark.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
   // Custom CSS
 .nav-item {
@@ -161,9 +73,6 @@ body.dark-mode .even-sections {
   font-size: 2rem;
 }
 
-.navbar-nav .active{
-  color: red;
-}
 
 .hero-title {
   margin-top: 100px;
@@ -171,4 +80,10 @@ body.dark-mode .even-sections {
 
 .btn {
   border-radius: 0;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  font-weight: 700;
+  color: var(--bs-warning);
 }
