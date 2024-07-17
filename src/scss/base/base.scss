@@ -1,0 +1,13 @@
+// Base CSS Styling
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.odd-sections {
+    background-color: var(--bs-dark-bg-subtle) !important;
+}

@@ -2,36 +2,11 @@
 @import "bootstrap/scss/bootstrap";
 
 
-// Custom CSS 
+// Custom CSS Files
+@import "../scss/base/base.scss";
+@import "../scss/components/navbar.scss";
+@import "../scss/pages/hero.scss";
 
-html {
-  scroll-behavior: smooth;
-}
-
-.nav-link {
-  position: relative;
-}
-
-.nav-link.active {
-  font-weight: 700;
-  color: var(--bs-warning) !important;
-}
-  
-.nav-link::after {
-  opacity: 0;
-  transition: all 0.2s;
-  height: 2px;
-  width: 100%;
-  background-color: var(--bs-warning);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-  
-.nav-link:hover::after {
-  content: '';
-  opacity: 1;
-}
 
 .variable-height-section {
   height: auto;
@@ -41,17 +16,6 @@ html {
   align-items: center;
   padding: 1rem;
   box-sizing: border-box;
-}
-
-.hero-section {
-  background-image: url('../img/dark.png'); 
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; 
 }
 
 .about-title {
@@ -70,33 +34,9 @@ html {
   }
 }
 
-  // Custom CSS
-.nav-item {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
 .brand-text {
   font-family: "Urbanist", sans;
   font-style: italic;
   font-weight: 600;
-  color: var(--bs-warning);
-}
-.navbar-brand {
-  font-size: 2rem;
-}
-
-
-.hero-title {
-  margin-top: 100px;
-}
-
-.btn {
-  border-radius: 0;
-}
-
-.nav-item a:hover,
-.nav-item a:active {
-  font-weight: 700;
   color: var(--bs-warning);
 }
