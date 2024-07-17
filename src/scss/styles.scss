@@ -2,10 +2,96 @@
 @import "bootstrap/scss/bootstrap";
 
 
+// Custom CSS 
+:root {
+  --primary-color: #228B22;
+  --secondary-color: #87CEEB;
+  --accent-color: #FF4500;
+  --light-bg: #FFFFFF;
+  --light-text: #333333;
+  --dark-bg: #121212;
+  --dark-text: #E0E0E0;
+  --navbar-light-bg: #4682B4;
+  --navbar-dark-bg: #121212;
+  --navbar-light-text: #FFFFFF;
+  --navbar-dark-text: #E0E0E0;
+  --hero-light-bg: #228B22;
+  --hero-dark-bg: #4682B4;
+  --hero-light-text: #FFFFFF;
+  --hero-dark-text: #E0E0E0;
+  --section-light-bg1: #FFFFFF;
+  --section-light-bg2: #32CD32;
+  --section-dark-bg1: #121212;
+  --section-dark-bg2: #FF4500;
+}
+
+
+/* Font Families */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, a, li {
+  font-family: 'Roboto', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
+// Light and Dark Modes
+/* Light Mode */
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.navbar, .footer {
+  background-color: var(--navbar-light-bg);
+  color: var(--navbar-light-text);
+}
+
+.hero-section {
+  background-color: var(--hero-light-bg);
+  color: var(--hero-light-text);
+}
+
+.odd-sections {
+  background-color: var(--section-light-bg1);
+  color: var(--light-text);
+}
+
+.even-sections {
+  background-color: var(--section-light-bg2);
+  color: var(--hero-light-text);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode .navbar {
+  background-color: var(--navbar-dark-bg);
+  color: var(--navbar-dark-text);
+}
+
+body.dark-mode .hero-section {
+  background-color: var(--hero-dark-bg);
+  color: var(--hero-dark-text);
+}
+
+body.dark-mode .odd-sections {
+  background-color: var(--section-dark-bg1);
+  color: var(--dark-text);
+}
+
+body.dark-mode .even-sections {
+  background-color: var(--section-dark-bg2);
+  color: var(--section-dark-bg1);
+}
+// ----------------------------------------------------------- //
 .nav-link {
     position: relative;
 }
@@ -27,7 +113,6 @@ html {
 }
 
 .active {
-  color: white;
   font-weight: 700;
 }
 
