@@ -141,3 +141,34 @@ body.dark-mode .even-sections {
     background-position: center;
     background-repeat: no-repeat;
   }
+
+
+
+
+
+  // Custom CSS
+.nav-item {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.brand-text {
+  font-family: "Urbanist", sans;
+  font-style: italic;
+  font-weight: 600;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-nav .active{
+  color: red;
+}
+
+.hero-title {
+  margin-top: 100px;
+}
+
+.btn {
+  border-radius: 0;
+}

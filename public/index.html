@@ -3,50 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Mucky Mayhem v0.0.4</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/> 
-    <script type="module" crossorigin src="/assets/index-Cny3Ebtz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CCPYvR2a.css">
+    <title>Mucky Mayhem v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-Bx-Z94mx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-i9knb2IZ.css">
   </head>
-  <body class="m-0 border-0">
-         
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle fixed-top">
-      <div class="container">
+  <body class="dropdown" data-bs-theme="dark">
 
-        <a href="#" class="navbar-brand"><h2><span class="text-warning">Mucky</span> Mayhem</h2></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand brand-text text-warning ps-5" href="#"><span class="text-warning">Mucky Mayhem</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#about-us" class="nav-link text-black-50">About Us</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#where-to-next" class="nav-link text-black-50">Where To Next</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="#our-supporters" class="nav-link text-black-50">Our Supporters</a>
+              <a class="nav-link" href="#">Where To Next</a>
             </li>
             <li class="nav-item">
-              <a href="#ride-diary" class="nav-link text-black-50">Ride Diary</a>
+              <a class="nav-link" href="#">Our Supporters</a>
             </li>
             <li class="nav-item">
-              <a href="#faq" class="nav-link text-black-50">FAQ</a>
+              <a class="nav-link" href="#">Ride Diary</a>
             </li>
             <li class="nav-item">
-              <a href="#our-riders" class="nav-link text-black-50">Our Riders</a>
+              <a class="nav-link" href="#">FAQ</a>
             </li>
             <li class="nav-item">
-              <a href="#contact-us" class="nav-link text-black-50">Contact Us</a>
+              <a class="nav-link" href="#">Our Riders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -54,501 +52,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero-section" class="min-vh-100 hero-section text-dark">
-      <div class="container-lg d-flex align-items-center justify-content-center vh-100 ">
-        <div class="container text-center pt-lg-5">
-          <div class="row align-items-center border border-1">
-            <div class="col">
-              <h1>Welcome to FLEET <span class="text-warning">MUCKY</span> MAYHEM CYCLING!</h1>
-              <div class="text-start">
-                <p class="lead">We are a local group of cyclists within the Fleet (Hampshire) and surrounding areas that enjoy exploring off-road routes along the local towpaths away from the traffic.</p>
-                <p>We welcome new and experienced riders, whether you have just bought a shiny new MTB/Gravel bike or dug your old bike out of the depths of the shed/garage and wiped off the cobwebs!</p>
-              </div>
-            </div>
-            <div class="col text-center">
-              <img src="/assets/hero-bg-CkslY9pt.jpg" alt="" class="img-thumbnail mx-auto d-block">
-            </div>
+    <section class="hero text-center">
+      <div class="container">
+        <h1 class="hero-title display-2 pb-2">We are Fleet <span class="brand-text text-warning">MUCKY MAYHEM</span> Cycling!</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <p class="lead pb-2">We are a local group of cyclists within the Fleet (Hampshire) and surrounding areas that enjoy exploring off-road routes along the local towpaths away from the traffic.</p>
+            <p class="pb-2">We welcome new and experienced riders, whether you have just bought a shiny new MTB/Gravel bike or dug your old bike out of the depths of the shed/garage and wiped off the cobwebs!</p>
+            <button class="btn btn-lg btn-outline-warning">Come join Us</button>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- About Us Section -->
-    <section id="about-us" class="min-vh-100">
-      <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-dark-subtle">
-        <div class="container text-center pt-lg-5">
-          <div class="row align-items-center border border-1">
-            <div class="col text-center">
-              <img src="/assets/small-group-BVw-fB15.webp" alt="" class="img-thumbnail mx-auto d-block">
-            </div>
-            <div class="col">
-              <h2>About Us <span class="text-warning">MUCKIES</span></h2>
-              <div class="text-start">
-                <p class="lead">Our regular (3 out of 4 Saturdays) off-road rides are 1.5-2.5 hours - Minley camp area, Caesar's camp, and towpath to Mytchett canal cafe, all advertised in our WhatsApp group.</P>
-                <p>Once a month we also aim to offer a longer ride, please check out our Ride Diary.</p>
-                <p>Ride style is relaxed, easy-paced social riding at 8 - 10 mph average - We wait for everyone!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>  
-  
-    <!-- Where To Next Section -->
-    <section id="where-to-next" class="min-vh-100">
-      <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-body-tertiary">
-        <div class="container text-center pt-lg-5">
-          <div class="row align-items-center border border-1">
-            <div class="col">
-              <h1>Where To Next...</h1>
-              <div>
-                <p class="lead text-start">Check out when and where we are heading next !</p>
-              </div>
-              <div class="text-start">
-                <h5>Title: Alice in Wonderland (aka Guildford loop)</h5></h4>
-                <h5>Date: 9am, TBD July (<span id="days"></span> Days, <span id="hours"></span> Hours, <span id="min"></span> Minutes, <span id="sec"></span> Seconds)</h5>
-                <h5>Destination: Guildford</h5>
-                <h5>Distance (approx.): 38 miles</h5>
-                <h5>Ride Time (estimate): 6 hours</h5>
-                <p>Mixed riding including Tarmac, a fun ride! Loop to Guildford, via Farnham, Mytchett, Guildford, Watts Gallery, Farnham</p>  
-              </div>
-            </div>
-            <div class="col text-center">
-              <img src="/assets/alice-C2McwS6D.png" alt="" class="img-thumbnail mx-auto d-block">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Supporters Section -->
-    <section id="our-supporters" class="min-vh-100">
-      <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-dark-subtle">
-        <div class="container text-center pt-lg-5">
-          <h1>Our Supporters</h1>
-          <div class="text-start">
-            <p class="lead">Check out some of the local businesses that provide support for our group.</p>
-            </p>A big <span class="display-6">THANK YOU</span> to these businesses for their continued support.</p>
-          </div>          
-          <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-header">
-                  Metacom IT Ltd.
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Professional IT Services for more than 20 years.</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Check out Metacom</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-header">
-                  Your Business Here
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Help us to help you</h5>
-                  <p class="card-text">With a simple description and link to you and your business.</p>
-                  <a href="#" class="btn btn-primary">Contact Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>  
-
-    <!-- Ride Diary -->
-    <section id="ride-diary" class="min-vh-100">
-  <!--    <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-body-tertiary">  -->
-      <div class="container variable-height-section bg-body-tertiary">
-        <div class="container text-center pt-lg-5">
-          <h1>Ride Diary</h1>
-          <div class="text-start">
-            <p class="lead ">
-              Here is a list of our past and planned rides.</p>
-            <p>
-              If you are interested in coming along, reach out to us through the Contact Us section.
-            </p>      
-          </div>   
-          <div>
-            <table class="table table-dark table-striped table-sm">
-              <thead>
-                <tr>
-                  <th scope="col">Date</th>
-                  <th scope="col">Title</th>
-                  <th scope="col">Destination</th>
-                  <th scope="col">Miles</th>
-                  <th scope="col">Ride Time</th>
-                  <th scope="col">Guidance</th>
-                  <th scope="col">Notes</th>  
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>17/Feb/24</td>
-                  <td>Lock, Stock & Barrel</td>
-                  <td>Bisley</td>
-                  <td>27</td>
-                  <td>3.5hrs</td>
-                  <td>Easy going along Tow Path, Cafe at NSC.</td>
-                  <td>4 went, great breakfast. ...uphill on way back ! lol</td>  
-                </tr>
-                <tr>
-                  <td>09/Mar/24</td>
-                  <td>War of the Worlds</td>
-                  <td>Woking</td>
-                  <td>35</td>
-                  <td>4.5hrs</td>
-                  <td>Easy going along Tow Path, H.G. Wells statue, Martian
-                    Alien Tripod sculpture, Cafe at The Lightbox Art
-                    Gallery.</td>
-                  <td>5 went, the weather was good. The Cafe at the Lightbox was great !.We had
-                      one mechanical which was dealt with whilst at the</td>
-                </tr>
-                <tr>
-                  <td>13/Apr/24</td>
-                  <td>Rags to Riches</td>
-                  <td>Weybridge</td>
-                  <td>48</td>
-                  <td>6hrs</td>
-                  <td>Easy going along Tow path. All options for shorter rides
-                    and trains from Brookwood (14m), Woking (18m),
-                    Weybridge (24m)</td>
-                  <td>5 set out, we met one more on the way, 5 and half ? :) We had a comfort stop
-                    at Mytchett Canal cafe, then headed to Weybridge, we walked through the
-                    High St (traffic was heavy !) to Cafe Enzo, great menu and the food and coffee
-                    was good, reasonably priced ! on the return, another stop at Mytchett canal
-                    cafe for tea and ice cream ! 47 miles in total, approx 4hr 40mins ride time (6hrs
-                    50mins total), 10mph average</td>
-                </tr>
-                <tr>
-                  <td>11/May/24</td>
-                  <td>Burnt Cakes!</td>
-                  <td>Winchester</td>
-                  <td>40</td>
-                  <td>5-6hrs</td>
-                  <td>Tow Path, Cross country, some tarmac. Return by train to Fleet.</td>
-                  <td> </td>
-                </tr>
-                <tr>
-                  <td>08/Jun/24</td>
-                  <td>City Slickers</td>
-                  <td>London</td>
-                  <td>50</td>
-                  <td>7-8hrs</td>
-                  <td>Mainly Tow path out to Weybridge, Wey navigation to Thames path, then into London. Train back from Waterloo.</td>
-                  <td>7 went. Towpath was firm going, stop for food and coffee at The Lightbox,
-                    Woking, arrived in 1 Hr 55 mins, approx 35-40 mins stop. At Weybridge in 3
-                    Hrs 5 mins, averaging 11 mph to this point. At Hampton Court in 4 Hrs 10 mins,
-                    the Thames path is generally in good condition and wide, there are occassional
-                    pinch points and can be lots of people, especially in areas with Rowing clubs
-                    by the river. It felt as if we were in open countryside for the majority of the way.
-                    Progress slowed in the last 4 miles as the route sometimes left the river side
-                    and also the vloume of people increased. We arrived at Waterlow after 7 Hrs
-                    15 mins ! A great adventure for the day !</td>
-                </tr>
-                <tr class="table-danger">
-                  <td>xx/Jul/24</td>
-                  <td>Alice in Wonderland</td>
-                  <td>Guildford</td>
-                  <td>38</td>
-                  <td>6hrs</td>
-                  <td>Mixed riding including Tarmac, a fun ride !
-                    Loop to Guildford, via Farnham, Mytchett, Guildford,
-                    Watts Gallery, Farnham</td>
-                  <td> </td>
-                </tr>
-                <tr>
-                  <td>xx/Aug/24</td>
-                  <td>DDOTTS</td>
-                  <td>Guildford to Shoreham-by-Sea</td>
-                  <td>78</td>
-                  <td>10hrs</td>
-                  <td>Start at 08:30, Guildford Railway Station Main entrance
-                    !Old disused railway line route, minimal tarmac.
-                    Many options for shorter rides, cafe stop at 21 miles,
-                    thus folks can return from there. Various options for
-                    trains back to Guildford. All can be catered for !
-                    1. Ice Cream Run : Ride to Southwater Country Park
-                    Cafe - 21 miles each way (42 total)
-                    2. Sails and Rails : Ride to Shorham by Sea, see the
-                    sails/boats and catch the train back, approx 38 miles
-                    3. Full Monty : Guildford to Shoreham-by-sea and
-                    return ....76 miles !</td>
-                  <td> </td>
-                </tr>
-                <tr>
-                  <td>reserve</td>
-                  <td>Spa Day !</td>
-                  <td>Bath to Reading</td>
-                  <td>82</td>
-                  <td>10</td>
-                  <td>Mainly Tow path. Current thinking, drive to Reading,
-                    train to Bath, ride back to Reading...with options to opt
-                    out and get the train at various points. this will be an
-                    early start !</td>
-                  <td> </td>  
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-        </div>
-      </div>
-    </section>   
-
-    <!-- FAQ Section -->
-    <section id="faq" class="min-vh-100">
-      <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-dark-subtle">
-        <div class="container text-center pt-lg-5">
-          <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
-          <p class="lead text-start">Here are a few pointers to help you understand what to expect...</p>
-          <div class="accordion accordion-flush text-dark" id="questions">
-            <!-- Item 1 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-one">
-                  Where exactly are you located?
-                </button>
-              </h2>
-              <div
-                id="question-one"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#questions">
-                <div class="accordion-body">
-                  We are based in and around the Fleet, Hampshire area of the UK.
-                  We have riders who come from as far away as .....
-                </div>
-              </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-two">
-                  What days do you ride?
-                </button>
-              </h2>
-              <div
-                id="question-two"
-                class="accordion-collapse collapse"
-                data-bs-parent="#questions">
-                <div class="accordion-body">
-                  We usually have rides on x,y, and z. See the Ride Diary for more details.
-                </div>
-              </div>
-            </div>
-            <!-- Item 3 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-three">
-                  What time do you meet up?
-                </button>
-              </h2>
-              <div
-                id="question-three"
-                class="accordion-collapse collapse"
-                data-bs-parent="#questions">
-                <div class="accordion-body">
-                  We usually meet up from xx to yy on zz.
-                  Some rides are scheduled to start at different times from this, please see the Ride Diary for specifics.
-                </div>
-              </div>
-            </div>
-            <!-- Item 4 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-four">
-                  What equipment do I need to ride with the group?
-                </button>
-              </h2>
-              <div
-                id="question-four"
-                class="accordion-collapse collapse"
-                data-bs-parent="#questions">
-                <div class="accordion-body">
-                  As we ride mainly along canal towpaths, most types of bicycles are suitable, however I might not choose to ride my carbon-framed Time Trial bike.
-                  We do ask that you ride with a suitable and fitting helmet.
-                  As we ride along where there are other users, we recommend that you have a working bell to be able to let others know of your location.
-                  ....
-                </div>
-              </div>
-            </div>
-            <!-- Item 5 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-five">
-                  Do you provide GPS data for your rides?
-                </button>
-              </h2>
-              <div
-                id="question-five"
-                class="accordion-collapse collapse"
-                data-bs-parent="#questions">
-                <div class="accordion-body">
-                  No, we do not provide these. However...
-                </div>
-              </div>
-            </div>
-            <!-- Item 6 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-five">
-                  What equipment do I need for the rides?
-                </button>
-              </h2>
-              <div
-                id="question-five"
-                class="accordion-collapse collapse"
-                data-bs-parent="#questions">
-                <div class="accordion-body">
-                  Here is a list of the items you might want to ensure you have with you on the rides:
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section> 
-
-    <!-- Our Riders -->
-    <section id="our-riders" class="min-vh-100">
-      <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-body-tertiary">
-        <div class="container text-center pt-lg-5">
-          <h1>Our Riders</h1>
-          <div class="text-start">
-            <p class="lead ">
-              Here are a few of our regular Muckies.</p>
-            <p>
-              If this sounds like a group for you and you are interested in coming along, reach out to us through the Contact Us section.
-            </p>      
-          </div>   
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/11.jpg"
-                    class="rounded-circle mb-3"
-                    alt=""
-                  />
-                  <h3 class="card-title mb-3">John Doe</h3>
-                  <p class="card-text">
-                    Great group of people, I look forward to our group rides...
-                  </p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-6 col-lg-3">
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <img
-                    src="https://randomuser.me/api/portraits/women/11.jpg"
-                    class="rounded-circle mb-3"
-                    alt=""
-                  />
-                  <h3 class="card-title mb-3">Jane Doe</h3>
-                  <p class="card-text">
-                    Nice helpful group, lovely bunch.....
-                  </p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-6 col-lg-3">
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/12.jpg"
-                    class="rounded-circle mb-3"
-                    alt=""
-                  />
-                  <h3 class="card-title mb-3">Steve Smith</h3>
-                  <p class="card-text">
-                    I love the cafe stops the best, great sarnies and coffee....
-                  </p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-6 col-lg-3">
-              <div class="card bg-light">
-                <div class="card-body text-center">
-                  <img
-                    src="https://randomuser.me/api/portraits/women/12.jpg"
-                    class="rounded-circle mb-3"
-                    alt=""
-                  />
-                  <h3 class="card-title mb-3">Sara Smith</h3>
-                  <p class="card-text">
-                    I really love the friendly, socialable......
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>  
-
-    <!-- Contact Us -->
-    <section id="contact-us" class="min-vh-100">
-<!--       <div class="container-lg d-flex align-items-center justify-content-center vh-100 bg-dark-subtle"> -->
-  <div class="container variable-height-section bg-dark-subtle">  
-        <div class="container text-center pt-lg-5">
-          <div class="row align-items-center border border-1">
-            <div class="col">
-              <img src="/assets/mm-qr-code-DnEu_FGa.jpg" class="img-fluid" alt="QR Code for WhatsApp Group">
-            </div>
-            <div class="col">
-              <h2>Contact Us</h2>
-              <div class="text-start">
-                <p class="lead">Interested, Want to Find Out more...</P>
-                <p>We have a WhatsApp group, so why not reach out and chat to the group.</p>
-                <p>WhatsAspp Group: <a href="https://chat.whatsapp.com/LJ1XZhB7KprApZhr4plhGD" target="_blank" class="btn btn-lg btn-info" role="button">Contact Us Here</a> or scan the QR Code.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>   
-
-  <!-- Footer -->
-  <footer class="bg-primary-subtle text-dark text-center position-relative py-3">
-    <div class="container">
-      <p class="lead">Copyright &copy; 2024 Mucky Mayhem | v0.0.4 Designed by Me</p>
-      <a href="#" class="position-absolute bottom-0 end-0 p-3">
-        <i class="bi bi-arrow-up-circle h1 text-dark"></i>
-      </a>
-    </div>
-  </footer>
-
   </body>
 </html>
