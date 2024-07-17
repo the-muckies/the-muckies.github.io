@@ -35,7 +35,7 @@ html {
 
 .variable-height-section {
   height: auto;
-  min-height: 100vh; /* Optional */
+  // min-height: 100vh; /* Optional */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,18 +44,30 @@ html {
 }
 
 .hero-section {
-  height: 100vh; /* default height for other sections */
+  background-image: url('../img/dark.png'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Ensure the overlay can be positioned */
+  position: relative; 
 }
 
-.hero-section.bg-primary {
-  background-image: url('../img/dark.png'); /* Replace with your image path */
+.about-title {
+  background-image: url('../img/group-riders.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  min-height: 50vw;
+}
+
+.about-text {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  @include media-breakpoint-up(md) {
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+  }
 }
 
   // Custom CSS
@@ -68,6 +80,7 @@ html {
   font-family: "Urbanist", sans;
   font-style: italic;
   font-weight: 600;
+  color: var(--bs-warning);
 }
 .navbar-brand {
   font-size: 2rem;
