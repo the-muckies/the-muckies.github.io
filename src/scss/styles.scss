@@ -41,7 +41,19 @@
   color: var(--bs-warning);
 }
 
-.active-ride {
-  background-color: var(--bs-warning);
-  color: white;
+// .active-ride {
+//   background-color: var(--bs-warning);
+//   color: white;
+// }
+
+.lead, .card-header {
+  font-size: 1.4rem !important;
+}
+
+p {
+  font-size: 1.25rem !important;
+}
+
+.body-text {
+  font-size: 1.25rem;
 }

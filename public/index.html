@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mucky Mayhem v2.3.3</title>
+    <title>Mucky Mayhem v2.3.4</title>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"/>
  
 
-    <script type="module" crossorigin src="/assets/index-BL1EVF6S.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-uE7WLG2r.css">
+    <script type="module" crossorigin src="/assets/index-D5cEQRy5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BMuWSXLB.css">
   </head>
  
   <body data-bs-theme="dark">
@@ -59,10 +59,10 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-section text-center bg-primary">
       <div class="container">
-        <h1 class="hero-title display-2 pb-3 pt-0">We are Fleet <span class="brand-text text-warning">MUCKY MAYHEM</span> Cycling!</h1>
+        <h1 class="hero-title display-2 pb-3 pt-0">We are Fleet <span class="brand-text text-warning">MUCKY MAYHEM!</span></h1>
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <p class="h2 pb-3">We are a local group of cyclists within the Fleet (Hampshire) and surrounding areas that enjoy exploring off-road routes along the local towpaths away from the traffic.</p>
+            <p class="h2 pb-3">We are a local group of cyclists within the Fleet (Hampshire) and surrounding areas that enjoy off-road routes (adventure/exploring type of rides) along the local towpaths away from the traffic.</p>
             <p class="h3 pb-4">We welcome new and experienced riders, whether you have just bought a shiny new MTB/Gravel bike or dug your old bike out of the depths of the shed/garage and wiped off the cobwebs!</p>
             <button class="btn btn-lg btn-warning">Come join Us</button>
           </div>
@@ -82,7 +82,7 @@
             <div class="col">
               <h2 class="brand-text display-2">About Us</h2>
               <div class="text-start">
-                <p class="lead">Our regular (3 out of 4 Saturdays) off-road rides are 1.5-2.5 hours - Typically Minley camp area, Caesar's camp, and towpath to Mytchett canal cafe, all advertised in our WhatsApp group.</P>
+                <p class="lead">Our regular (3 out of 4 Saturdays) off-road rides are 1.5-2.5 hours long - Typically around the Minley camp, Caesar's camp areas, and along the towpath to Mytchett canal cafe, all advertised in our WhatsApp group.</P>
                 <p>Once a month we also aim to offer a longer ride, please check out our Ride Diary.</p>
                 <p>Ride style is relaxed, easy-paced social riding at 8 - 10 mph average - We wait for everyone!</p>
                 <p>We welcome all age groups, although under 18 year old riders must bring along their own adult -lol</p>
@@ -101,14 +101,15 @@
           <div class="row align-items-center">
             <div class="col">
               <h2 class="brand-text display-2">Where To Next...</h2>
+              <h4 class="brand-text pb-3">Countdown: <span id="days"></span> Day(s), <span id="hours"></span> Hours, <span id="min"></span> Minutes, <span id="sec"></span> Seconds</h4>
               <div>
-                <p class="h3 text-start">Check out when and where we are heading next!</p>
+                <p class="lead text-start pb-3">Check out when and where we are heading next!</p>
+                
               </div>
-              <div class="text-start">
+              <div class="text-start body-text">
                 <h5>Title: Alice in Wonderland (aka Guildford loop)</h5>
-                <h5>Depart: 09:00</h5>
+                <h5>Depart: 09:00 (sharp)</h5>
                 <h5>Date: 20th July</h5>
-                <h5>Countdown: (<span id="days"></span> Days, <span id="hours"></span> Hours, <span id="min"></span> Minutes, <span id="sec"></span> Seconds)</h5>
                 <h5>Destination: Guildford</h5>
                 <h5>Distance (approx.): 38 miles</h5>
                 <h5>Ride Time (estimate): 6 hours</h5>
@@ -116,7 +117,7 @@
               </div>
             </div>
             <div class="col text-center">
-              <img src="/assets/where-to-next-C2McwS6D.png" alt="map of the Where To Next route." class="img-thumbnail mx-auto d-block">
+              <img src="/assets/alice-in-wonderland-CNQVlgRG.jpg" alt="map of the Where To Next route." class="img-thumbnail mx-auto d-block">
             </div>
           </div>
         </div>
@@ -131,7 +132,7 @@
           <h2 class="brand-text display-2">Our Supporters</h2>
           <div class="text-start">
             <p class="lead">Check out some of the local businesses that provide support for our group.</p>
-            </p>A big <span class="h3 brand-text">THANK YOU</span> to these businesses for their continued support.</p>
+            <p><span class="h2">A big </span><span class="h2 brand-text">THANK YOU</span> to these businesses for their continued support.</p>
           </div>          
           <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0">
@@ -178,125 +179,148 @@
           </div>   
           <div>
             <table class="table table-dark table-bordered table-sm">
-              <thead>
+              <thead class="body-text">
                 <tr>
                   <th scope="col">Date</th>
-                  <th scope="col">Title</th>
-                  <th scope="col">Destination</th>
+                  <th scope="col" class="text-start">Title</th>
+                  <th scope="col" class="text-start">Destination</th>
                   <th scope="col">Miles</th>
                   <th scope="col">Ride Time</th>
-                  <th scope="col">Guidance</th>
-                  <th scope="col">Notes</th>  
+                  <th scope="col" class="text-start">Guidance</th>
+                  <th scope="col" class="text-start">Notes</th>  
                 </tr>
               </thead>
               <tbody class="table-group-divider">
-                <tr class="table-secondary">
-                  <td>17/Feb/24</td>
-                  <td>Lock, Stock & Barrel</td>
-                  <td>Bisley</td>
+                <tr class="table-secondary body-text">
+                  <td>17 Feb 24</td>
+                  <td class="text-start">Lock, Stock & Barrel</td>
+                  <td class="text-start">Bisley</td>
                   <td>27</td>
                   <td>3.5hrs</td>
-                  <td>Easy going along towpath, Cafe at NSC.</td>
-                  <td>4 went, great breakfast. ...uphill on way back! -lol</td>  
+                  <td class="text-start">Easy going along towpath, Cafe at NSC.</td>
+                  <td class="text-start">4 went, great breakfast. ...uphill on way back! -lol</td>  
                 </tr>
-                <tr class="table-secondary">
-                  <td>09/Mar/24</td>
-                  <td>War of the Worlds</td>
-                  <td>Woking</td>
-                  <td>35</td>
+                <tr class="table-secondary body-text">
+                  <td>9 Mar 24</td>
+                  <td class="text-start">War of the Worlds</td>
+                  <td class="text-start">Woking</td>
+                  <td>36</td>
                   <td>4.5hrs</td>
-                  <td>Easy going along towpath, H.G. Wells statue, Martian
-                    Alien Tripod sculpture, Cafe at The Lightbox Art
-                    Gallery.
+                  <td class="text-start">Easy going along towpath, H.G. Wells statue, Martian
+                    Alien Tripod sculpture, Cafe at The Lightbox Art Gallery.
                   </td>
-                  <td><p>5 went, the weather was good. The Cafe at the Lightbox was great!</p>
-                    We had one mechanical which was dealt with whilst at the cafe.
+                  <td class="text-start">
+                    <p>5 went, the weather was good. The Cafe at the Lightbox was great!</p>
+                    <p>We had one mechanical which was dealt with whilst at the cafe!</p>
+                    <p>34 miles, 3hrs 15mins ride time (4hr 50mins total), 10.5mph average.</p>
                   </td>
                 </tr>
-                <tr class="table-secondary">
-                  <td>13/Apr/24</td>
-                  <td>Rags to Riches</td>
-                  <td>Weybridge</td>
+                <tr class="table-secondary body-text">
+                  <td>13 Apr 24</td>
+                  <td class="text-start">Rags to Riches</td>
+                  <td class="text-start">Weybridge</td>
                   <td>48</td>
                   <td>6hrs</td>
-                  <td><p>Easy going along towpath.</p>
+                  <td class="text-start"><p>Easy going along towpath.</p>
                     All options for shorter rides and trains from Brookwood (14m), Woking (18m), Weybridge (24m)</td>
-                  <td><p>5 set out, we met one more on the way, 5 and half? :)</p>
-                    We had a comfort stop at Mytchett Canal cafe, then headed to Weybridge, we walked through the
-                    High St (traffic was heavy!) to Cafe Enzo, great menu and the food and coffee was good, reasonably priced! on the return, another stop at Mytchett canal
-                    cafe for tea and ice cream! 
+                  <td class="text-start">
+                    <p>5 set out, we met one more on the way, 5 and half? :)</p>
+                    <p>We had a comfort stop at Mytchett Canal cafe, then headed to Weybridge, we walked through the
+                    High St (traffic was heavy!) to Cafe Enzo, great menu and the food and coffee was good, reasonably priced! On the return, another stop at Mytchett canal
+                    cafe for tea and ice cream!</p> 
                     <p>47 miles in total, approx 4hr 40mins ride time (6hrs 50mins total), 10mph average.</p>
                   </td>
                 </tr>
-                <tr class="table-secondary">
-                  <td>11/May/24</td>
-                  <td>Burnt Cakes!</td>
-                  <td>Winchester</td>
+                <tr class="table-secondary body-text">
+                  <td>11 May 24</td>
+                  <td class="text-start">Burnt Cakes!</td>
+                  <td class="text-start">Winchester</td>
                   <td>40</td>
                   <td>5-6hrs</td>
-                  <td>Towpath, Cross country, some tarmac. Return by train to Fleet.</td>
+                  <td class="text-start">
+                    <p>Towpath, Cross country, some tarmac.</p>
+                    <p>Return by train to Fleet.</p>
+                  </td>
                   <td></td>
                 </tr>
-                <tr class="table-secondary">
-                  <td>08/Jun/24</td>
-                  <td>City Slickers</td>
-                  <td>London</td>
+                <tr class="table-secondary body-text">
+                  <td>8 Jun 24</td>
+                  <td class="text-start">City Slickers</td>
+                  <td class="text-start">London</td>
                   <td>50</td>
                   <td>7-8hrs</td>
-                  <td><p>Mainly towpath out to Weybridge, Wey navigation to Thames path, then into London.</p>Train back from Waterloo.</td>
-                  <td><p>7 went. Towpath was firm going, stop for food and coffee at The Lightbox,
-                    Woking, arrived in 1 Hr 55 mins, approx 35-40 mins stop.</p>
+                  <td class="text-start">
+                    <p>Mainly towpath out to Weybridge, Wey navigation to Thames path, then into London.</p>
+                    <p>Train back from Waterloo.</p>
+                  </td>
+                  <td class="text-start">
+                    <p>7 went. Towpath was firm going, stop for food and coffee at The Lightbox, Woking, arrived in 1 Hr 55 mins, approx 35-40 mins stop.</p>
                     <p>At Weybridge in 3Hrs 5 mins, averaging 11 mph to this point.</p>
-                    <p>At Hampton Court in 4 Hrs 10 mins,the Thames path is generally in good condition and wide, there are occassional
+                    <p>At Hampton Court in 4 Hrs 10 mins,from here the Thames path is generally in good condition and wide, there are occassional
                     pinch points and can be lots of people, especially in areas with Rowing clubs by the river.</p>
-                    It felt as if we were in open countryside for the majority of the way.
-                    <p>Progress slowed in the last 4 miles as the route sometimes left the river side
-                    and also the volume of people increased.</p>
+                    <p>It felt as if we were in open countryside for the majority of the way.</p>
+                    <p>Progress slowed in the last 4 miles as the route sometimes left the river side and also the volume of people increased.</p>
                     <p>We arrived at Waterloo after 7 Hrs 15 mins!</p> 
                     <p>A great adventure for the day!</p>
                   </td>
                 </tr>
-                <tr class="table-dark">
-                  <td>20/Jul/24</td>
-                  <td>Alice in Wonderland</td>
-                  <td>Guildford</td>
+                <tr class="table-dark body-text">
+                  <td>20 Jul 24</td>
+                  <td class="text-start">Alice in Wonderland - aka Guildford loop</td>
+                  <td class="text-start">Guildford</td>
                   <td>38</td>
                   <td>6hrs</td>
-                  <td><p>Mixed riding including tarmac, a fun ride!</p>
-                    Loop to Guildford, via Farnham, Mytchett, Guildford,
-                    Watts Gallery, Farnham</td>
+                  <td class="text-start">
+                    <p>Depart at 09:00!</p>
+                    <p>Mixed riding including tarmac, a fun ride challenging ride!</p>
+                    <p>Loop to Guildford, via Ash, Pirbright, Guildford.</p>
+                    <p>Coffee stop at Watts Gallery.</p>
+                    <p>Then onto Farnham and Fleet.</p>
+                  </td>
                   <td> </td>
                 </tr>
-                <tr class="table-success">
-                  <td>xx/Aug/24</td>
-                  <td>DDOTTS</td>
-                  <td>Guildford to Shoreham-by-Sea</td>
-                  <td>78</td>
+                <tr class="table-success body-text">
+                  <td>24 Aug 24</td>
+                  <td class="text-start">DDOTTS</td>
+                  <td class="text-start">Guildford to Shoreham-by-Sea</td>
+                  <td>76</td>
                   <td>10hrs</td>
-                  <td><p>DDOTTS - Daft Day Out To The SeaSide</p>
-                    <p>Start at 08:30, Guildford Railway Station Main entrance.</p>
+                  <td class="text-start">
+                    <p>DDOTTS - Daft Day Out To The SeaSide</p>
+                    <p>Depart at 08:30!</p>
+                    <p>From Guildford Railway Station Main entrance!</p>
                     <p>Old disused railway line route, minimal tarmac.</p>
                     <p>Many options for shorter rides, cafe stop at 21 miles,
                     thus folks can return from there.</p> 
                     <p>Various options for trains back to Guildford. All can be catered for!</p>
-                    <p>1. Ice Cream Run : Ride to Southwater Country Park
-                    Cafe - 21 miles each way (42 total)</p>
-                    <p>2. Sails and Rails : Ride to Shorham by Sea, see the
-                    sails/boats and catch the train back, approx 38 miles</p>
-                    <p>3. Full Monty : Guildford to Shoreham-by-sea and return ....76 miles!</p>
+                    <p>1. Ice Cream Run: Ride to Southwater Country Park Cafe - 21 miles each way (42 total)</p>
+                    <p>2. Sails and Rails: Ride to Shorham by Sea, see the sails/boats and catch the train back, approx 38 miles</p>
+                    <p>3. Full Monty: Guildford to Shoreham-by-sea and return ....76 miles!</p>
                   </td>
                   <td> </td>
                 </tr>
-                <tr class="table-success">
-                  <td>reserve</td>
-                  <td>Spa Day !</td>
-                  <td>Bath to Reading</td>
+                <tr class="table-success body-text">
+                  <td>September</td>
+                  <td class="text-start">TBC</td>
+                  <td class="text-start"> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td class="text-start">
+                    <p> </p>
+                  </td>
+                  <td> </td>  
+                </tr>
+                <tr class="table-success body-text">
+                  <td>Next year</td>
+                  <td class="text-start"> </td>
+                  <td class="text-start">Bath to Reading</td>
                   <td>82</td>
                   <td>10</td>
-                  <td><p>Mainly towpath.</p> Current thinking, drive to Reading,
-                    train to Bath, ride back to Reading...with options to opt
-                    out and get the train at various points. this will be an
-                    early start !</td>
+                  <td class="text-start">
+                    <p>Mainly towpath.</p>
+                    <p>Current thinking, drive to Reading, train to Bath, ride back to Reading...with options to opt out and get the train at various points.</p>
+                    <p>This will be an early start!</p>
+                  </td>
                   <td> </td>  
                 </tr>
               </tbody>
@@ -319,20 +343,20 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed lead brand-text"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-one">
-                  Where exactly are you located?
+                  Where does the group meet up?
                 </button>
               </h2>
               <div
                 id="question-one"
                 class="accordion-collapse collapse show"
                 data-bs-parent="#questions">
-                <div class="accordion-body">
+                <div class="accordion-body body-text">
                   We are based in and around the Fleet, Hampshire area of the UK.
-                  We have riders who come from as far away as .....
+                  Most rides start from: W3W, the Reading Road car park.
                 </div>
               </div>
             </div>
@@ -340,7 +364,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed lead brand-text"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-two">
@@ -351,8 +375,8 @@
                 id="question-two"
                 class="accordion-collapse collapse"
                 data-bs-parent="#questions">
-                <div class="accordion-body">
-                  We usually have rides on x,y, and z. See the Ride Diary for more details.
+                <div class="accordion-body body-text">
+                  Currently we only ride on a Saturday.
                 </div>
               </div>
             </div>
@@ -360,7 +384,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed lead brand-text"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-three">
@@ -371,9 +395,9 @@
                 id="question-three"
                 class="accordion-collapse collapse"
                 data-bs-parent="#questions">
-                <div class="accordion-body">
-                  We usually meet up from xx to yy on zz.
-                  Some rides are scheduled to start at different times from this, please see the Ride Diary for specifics.
+                <div class="accordion-body body-text">
+                  Our regular rides depart 09:30, please plan to arrive a few minutes earlier.
+                  For our longer rides, please see the Ride Diary for specifics.
                 </div>
               </div>
             </div>
@@ -381,7 +405,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed lead brand-text"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-four">
@@ -392,7 +416,7 @@
                 id="question-four"
                 class="accordion-collapse collapse"
                 data-bs-parent="#questions">
-                <div class="accordion-body">
+                <div class="accordion-body body-text">
                   As we ride mainly along canal towpaths, most types of bicycles are suitable, however I might not choose to ride my carbon-framed Time Trial bike.
                   We do ask that you ride with a suitable and fitting helmet.
                   As we ride along where there are other users, we recommend that you have a working bell to be able to let others know of your location.
@@ -404,39 +428,60 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button collapsed lead brand-text"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-five">
-                  Do you provide GPS data for your rides?
+                  What bike type do I need for the rides?
                 </button>
               </h2>
               <div
                 id="question-five"
                 class="accordion-collapse collapse"
                 data-bs-parent="#questions">
-                <div class="accordion-body">
-                  No, we do not provide these. However...
+                <div class="accordion-body body-text">
+                  Here is a list of the bike types that are most suitable for the type of rides we do:
                 </div>
               </div>
             </div>
-            <!-- Item 6 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-five">
-                  What equipment do I need for the rides?
+          <!-- Item 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed lead brand-text"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-six">
+                What equipment do I need for the rides?
+                <!-- Add an outline disclaimer notice. [Disclaimer] -->
+              </button>
+            </h2>
+            <div
+              id="question-six"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions">
+              <div class="accordion-body body-text">
+                  Here is a list of other items:
+              </div>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed lead brand-text"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-seven">
+                What food and drink are recommended for the rides?
                 </button>
               </h2>
               <div
-                id="question-five"
+                id="question-seven"
                 class="accordion-collapse collapse"
                 data-bs-parent="#questions">
-                <div class="accordion-body">
-                  Here is a list of the items you might want to ensure you have with you on the rides:
+                <div class="accordion-body body-text">
+                  Here is a list of some of the typical things you might need to eat and drink on our rides:
                 </div>
               </div>
             </div>
@@ -457,7 +502,7 @@
               <h2 class="brand-text display-2">Contact Us</h2>
               <div class="text-start">
                 <p class="lead">Interested, Want to Find Out more...</P>
-                <p>We have a WhatsApp group, so why not reach out and chat to the group.</p>
+                <p>We have a WhatsApp group, so why not reach out and chat to the group, please introduce yourself to the group..</p>
                 <p>WhatsAspp Group: <a href="https://chat.whatsapp.com/LJ1XZhB7KprApZhr4plhGD" target="_blank" class="btn btn-lg btn-warning" role="button">Contact Us Here</a> or scan the QR Code.</p>
               </div>
             </div>
@@ -469,7 +514,7 @@
     <!-- Footer -->
     <footer class="footer text-center position-relative py-3 odd-sections">
       <div class="container">
-        <p class="lead">Copyright &copy; 2024 <span class="brand-text">Mucky Mayhem</span> | v2.3.3 Designed by Me (18-07-2024)</p>
+        <p class="lead">Copyright &copy; 2024 <span class="brand-text">Mucky Mayhem</span> | v2.3.4 Designed by Me (18-07-2024)</p>
         <a href="#" class="position-absolute bottom-0 end-0 p-3">
           <i class="brand-text bi bi-arrow-up-circle h1"></i>
         </a>
