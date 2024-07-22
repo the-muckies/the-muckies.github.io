@@ -10,7 +10,6 @@
 
 .variable-height-section {
   height: auto;
-  // min-height: 100vh; /* Optional */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,11 +39,6 @@
   font-weight: 600;
   color: var(--bs-warning);
 }
-
-// .active-ride {
-//   background-color: var(--bs-warning);
-//   color: white;
-// }
 
 .lead, .card-header {
   font-size: 1.4rem !important;
