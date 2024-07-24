@@ -1,5 +1,5 @@
 .hero-section {
-    background-image: url('../img/dark.png'); 
+    background-image: url('../img/dark-small.png') !important; 
     background-size: cover;
     background-position: center;
     min-height: 90vh;
@@ -11,4 +11,9 @@
 
   .hero-title {
     margin-top: 100px;
+  }
+
+  .hero-text > p,
+  .hero-text > a {
+    font-size: 1.45rem !important;
   }
