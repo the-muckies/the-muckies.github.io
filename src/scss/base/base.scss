@@ -1,5 +1,8 @@
 // Base CSS Styling
-
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
 html {
     scroll-behavior: smooth;
 }
@@ -10,7 +13,7 @@ body {
 }
 
 .btn {
-    border-radius: 0;
+    border-radius: 100px;
 }
 
 section {

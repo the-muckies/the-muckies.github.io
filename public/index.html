@@ -9,7 +9,10 @@
       name="description" 
       content="This is the website of a local group of social cyclists within the Fleet (Hampshire) and surrounding areas that enjoy off-road routes - Cross Country (XC), Adventure, and Exploring type of rides, frequently along the local towpaths away from the traffic."
     >
-
+    <meta
+      name="keywords"
+      content="Fleet Mucky Mayhem Cycling group, Fleet Cycling group, Fleet Towpath Cycling group"
+    >
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32-DOgwE9vL.png">
 
 
@@ -21,57 +24,62 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"/>
  
 
-    <script type="module" crossorigin src="/assets/index-BKX1Hpen.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Cm9y7Qkc.css">
+    <script type="module" crossorigin src="/assets/index-B4GFkMqW.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DY_GKSTk.css">
   </head>
  
+  <!-- We are defaulting to Dark Mode (light/dark mode in future)-->
   <body data-bs-theme="dark">
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand brand-text text-warning ps-5" href="#hero"><span class="text-warning">Fleet Mucky Mayhem</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#hero">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#where-to-next">Where To Next</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#our-supporters">Our Supporters</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ride-diary">Ride Diary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Contact Us</a>
-            </li>
-          </ul>
+    <header>
+      <!-- NavBar -->    
+      <nav class="navbar navbar-expand-xxl bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand brand-text text-warning ps-5" href="#hero"><span class="text-warning">Fleet Mucky Mayhem</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#where-to-next">Where To Next</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#our-supporters">Our Supporters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ride-diary">Ride Diary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+            <div class="nav-cta">
+              <a class="btn btn-lg btn-warning" href="#contact-us" role="button">Contact Us</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-section text-center bg-primary">
+    <section id="home" class="hero-section text-center bg-primary">
       <div class="container">
-        <h1 class="hero-title display-2 pb-3">Welcome to <span class="brand-text text-warning">Fleet Mucky Mayhem</span></h1>
+        <div class="hero-welcome">
+          <h1 class="display-4">Welcome to</h1>
+        </div>
+        <h2 class="display-2 pb-3 brand-text text-warning">Fleet Mucky Mayhem</h2>
         <div class="row justify-content-center">
           <div class="hero-text col-md-8">
             <p class="pb-3">We are a local group of social cyclists within the Fleet (Hampshire) and surrounding areas that enjoy off-road routes - Cross Country (XC), Adventure, and Exploring type of rides, frequently along the local towpaths away from the traffic.</p>
             <p class="pb-3">These are very social rides, everyone helps and supports each other.</p>
             <p class="pb-4">We welcome new and experienced riders; whether you have just bought a shiny new MTB/Gravel bike or dug your old bike out of the depths of the shed/garage and wiped off the cobwebs - we can often help with fixing/maintaining your bike and to get you back in the saddle!</p>
-            <a class="btn btn-lg btn-warning" href="#contact-us" role="button">Contact Us</a>
           </div>
         </div>
       </div>
@@ -171,7 +179,7 @@
 
     <!-- Ride Diary Section -->
     <section id="ride-diary" class="even-sections">
-      <div class="container-fluid variable-height-section">
+      <div class="container variable-height-section">
         <div class="text-center">
           <h2 class="brand-text display-2">Ride Diary</h2>
           <div class="text-start">
@@ -395,7 +403,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-one">
-                  When, Where and What time does the group meet up?
+                  1) When, Where and What time does the group meet up?
                 </button>
               </h2>
               <div
@@ -418,7 +426,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-two">
-                  What sort of bike do I need to enjoy these rides?
+                  2) What sort of bike do I need to enjoy these rides?
                 </button>
               </h2>
               <div
@@ -448,7 +456,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-three">
-                  What sort of tyres do I need?
+                  3) What sort of tyres do I need?
                 </button>
               </h2>
               <div
@@ -472,7 +480,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-four">
-                  I don't have a suitable bike, how can I give this a go?
+                  4) I don't have a suitable bike, how can I give this a go?
                 </button>
               </h2>
               <div
@@ -493,7 +501,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-five">
-                  What equipment do I need to have with my bike?
+                  5) What equipment do I need to have with my bike?
                 </button>
               </h2>
               <div
@@ -523,7 +531,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-six">
-                  Do I need any special clothing?
+                  6) Do I need any special clothing?
                 </button>
               </h2>
               <div
@@ -552,7 +560,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-seven">
-                  What food and drink are recommended for the rides?
+                  7) What food and drink are recommended for the rides?
                 </button>
               </h2>
               <div
@@ -577,7 +585,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#question-eight">
-                  What else should I know about this group?
+                  8) What else should I know about this group?
                 </button>
               </h2>
               <div
@@ -609,6 +617,7 @@
                 <p class="lead">We have a <a href="https://chat.whatsapp.com/LJ1XZhB7KprApZhr4plhGD" target="_blank" role="button" class="brand-text">WhatsApp Group</a>, so why not reach out and chat to the group.</p>
                 <p>If you join, please introduce yourself to the group.</p>
                 <p><a href="https://chat.whatsapp.com/LJ1XZhB7KprApZhr4plhGD" target="_blank" role="button" class="brand-text">WhatsApp Group</a> or scan the QR Code on the left.</p>
+                <p>If you prefer, you can reach out to us via email at: <a href="mailto:fleetmuckymayhem@gmail.com" class="brand-text">fleetmuckymayhem@gmail.com</a>.</p>
               </div>
             </div>
           </div>
@@ -619,8 +628,8 @@
     <!-- Footer -->
     <footer class="footer text-center position-relative odd-sections p-lg-4">
       <div class="container">
-        <p class="lead">Copyright &copy; 2024 <span class="brand-text">Fleet Mucky Mayhem</span> | v0.1.1beta Designed & Donated by <span class="brand-text">Me</span></p>
-        <a href="#hero" class="position-absolute bottom-0 end-0 p-3">
+        <p class="lead">Copyright &copy; 2024 <span class="brand-text">Fleet Mucky Mayhem</span> | v0.1.2beta Designed & Donated by <span class="brand-text">Me</span></p>
+        <a href="#home" class="position-absolute bottom-0 end-0 p-3" aria-label="Navigate back to the top of the website.">
           <i class="brand-text bi bi-arrow-up-circle h1"></i>
         </a>
       </div>
