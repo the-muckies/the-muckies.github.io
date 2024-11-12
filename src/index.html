@@ -42,16 +42,6 @@
     <script defer src="./js/sectionscroll.js" type="module"></script>
     <script defer src="./js/utils.js" type="module"></script> 
 
-    <!-- <script>
-      $(function(){ 
-          var navMain = $(".navbar-collapse");
-
-          navMain.on("click", "a", null, function () {
-              navMain.collapse('hide');
-          });
-      });
-    </script> -->
-
   </head>
  
     <!-- We are defaulting to Dark Mode (light/dark mode in future)-->
@@ -68,7 +58,7 @@
     <header> 
       <nav class="navbar navbar-expand-xxl bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand brand-text text-warning ps-5" href="#home"><span class="text-warning">Fleet Mucky Mayhem</span></a>
+          <!-- <a class="navbar-brand brand-text text-warning ps-5" href="#home"><span class="text-warning">Fleet Mucky Mayhem</span></a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -95,10 +85,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#faq">FAQ</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact Us</a>
+              </li>
             </ul>
-            <div class="nav-cta">
-              <a class="btn btn-lg btn-warning" href="#contact-us" role="button">Contact Us</a>
-            </div>
           </div>
         </div>
       </nav>
@@ -118,6 +108,7 @@
             <p class="pb-4">We welcome new and experienced riders; whether you have just bought a shiny new MTB/Gravel bike or dug your old bike out of the depths of the shed/garage and wiped off the cobwebs - we can often help with fixing/maintaining your bike and to get you back in the saddle, additionally we also have a couple of <a href="https://app.box.com/s/yg7tl246oz2p3kvby9ugw5jj5yu1gced" target="_blank" class="brand-text">loan bikes</a> if you wish to try out a ride.</p>
           </div>
         </div>
+        <a class="btn btn-lg btn-warning" href="#contact-us" role="button">Contact Us</a>
       </div>
     </section>
 
@@ -962,7 +953,7 @@
     <!-- Footer -->
     <footer class="footer text-center position-relative even-sections p-lg-4">
       <div class="container">
-        <p class="lead">Copyright &copy; 2024 <span class="brand-text">Fleet Mucky Mayhem</span> | v1.1.5 Designed & Donated by <span class="brand-text">Me</span></p>
+        <p class="lead">Copyright &copy; 2024 <span class="brand-text">Fleet Mucky Mayhem</span> | v1.1.6 Designed & Donated by <span class="brand-text">Me</span></p>
         <a href="#home" class="position-absolute bottom-0 end-0 p-3" aria-label="Navigate back to the top of the website.">
           <i class="brand-text bi bi-arrow-up-circle h1"></i>
         </a>
@@ -980,9 +971,8 @@
             navbarToggler.click();
           }
         });
-      });
-      
-      </script>
+      });      
+    </script>
 
   </body>
 </html>
