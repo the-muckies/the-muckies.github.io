@@ -6,3 +6,15 @@ navLinkEls.forEach( navLinkEl => {
         navLinkEl.classList.add( 'active' );
     });
 });
+
+      // Collapse Navbar on Mobile After Link Click
+      document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const navbarCollapse = document.getElementById('navbarNav');
+          const isExpanded = window.getComputedStyle(navbarCollapse).display !== 'none';
+          if (isExpanded) {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            navbarToggler.click();
+          }
+        });
+      });   
