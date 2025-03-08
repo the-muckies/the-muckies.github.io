@@ -38,8 +38,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet"/>
      
 
-    <script type="module" crossorigin src="/assets/index-p3Rvsbyb.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-_sQmBW5_.css">
+    <script type="module" crossorigin src="/assets/index-BKSrGbXt.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DY0XX0He.css">
   </head>
  
     <!-- We are defaulting to Dark Mode (light/dark mode in future)-->
@@ -210,31 +210,76 @@
       </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about-us" class="odd-sections">
-      <div class="container-xxl d-flex align-items-center justify-content-center">
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <!-- Image Column -->
-            <div class="col-xxl-6 text-center order-xxl-1 order-1">
-              <img src="/assets/group-riders-Dl2Rf9Vv.jpg" alt="A few adventurous cyclists" class="img-thumbnail mx-auto d-block">
-            </div>
-            <!-- Text Column -->
-            <div class="col-xxl-6 order-xxl-2 order-2">
-              <h2 class="brand-text display-2">About Us</h2>
-              <div class="text-start">
-                <p>Our regular (3 out of 4 Saturdays) off-road rides are 1.5-2 hours long - Typically along the towpath to Mytchett canal café or out towards Odiham/Greywell and other suitable routes away from traffic, these are all advertised in our <a href="https://chat.whatsapp.com/LJ1XZhB7KprApZhr4plhGD" target="_blank" role="button" class="brand-text">WhatsApp Group <i class="bi bi-box-arrow-up-right brand-text"></i></a>.</p>
-                <p>Regular Meet Point is <a href="https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA" target="_blank" class="brand-text">Google Maps <i class="bi bi-box-arrow-up-right brand-text link-icon"> </i></a>.</p>
-                <p>Once a month we also aim to offer a longer ride, please check out our <a href="#ride-diary" class="brand-text">Ride Diary</a>.</p>
-                <p>Ride style is relaxed, easy-paced social riding at 8 - 10 mph average - We wait for everyone!</p>
-                <p>We welcome all age groups, although under 18 years old riders must bring along their own adult.</p>
-                <p>Note: We also have a couple of <a href="https://app.box.com/s/yg7tl246oz2p3kvby9ugw5jj5yu1gced" target="_blank" class="brand-text">Loan Bikes <i class="bi bi-box-arrow-up-right brand-text link-icon"> </i></a> that we are happy to lend out to anyone who wants to try this.</p>
+<!-- About Us Section -->
+<section id="about-us" class="odd-sections">
+  <div class="container-xxl d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <!-- Image Column with Bootstrap Carousel -->
+        <div class="col-xxl-6 text-center order-xxl-1 order-1">
+          <div id="aboutUsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            
+            <!-- Carousel Images -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/Image-1-Cs-RPiif.jpg" class="carousel-img d-block w-100 img-thumbnail" alt="Cyclists riding together">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Image-2-NuznectA.jpeg" class="carousel-img d-block w-100 img-thumbnail" alt="Cyclists at a rest stop">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Image-3-wx5ZYT4o.jpg" class="carousel-img d-block w-100 img-thumbnail" alt="Cyclists enjoying the ride">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Image-4-D9BkqzXW.jpg" class="carousel-img d-block w-100 img-thumbnail" alt="Cyclists enjoying the ride">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Image-5-CPZCtMJT.jpg" class="carousel-img d-block w-100 img-thumbnail" alt="Cyclists enjoying the ride">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Image-6-CGDdPw9q.jpg" class="carousel-img d-block w-100 img-thumbnail" alt="Cyclists enjoying the ride">
               </div>
             </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutUsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutUsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Moved Carousel Indicators Below the Images -->
+          <div class="carousel-indicators-container">
+            <button type="button" class="indicator active" data-bs-target="#aboutUsCarousel" data-bs-slide-to="0"></button>
+            <button type="button" class="indicator" data-bs-target="#aboutUsCarousel" data-bs-slide-to="1"></button>
+            <button type="button" class="indicator" data-bs-target="#aboutUsCarousel" data-bs-slide-to="2"></button>
+            <button type="button" class="indicator" data-bs-target="#aboutUsCarousel" data-bs-slide-to="3"></button>
+            <button type="button" class="indicator" data-bs-target="#aboutUsCarousel" data-bs-slide-to="4"></button>
+            <button type="button" class="indicator" data-bs-target="#aboutUsCarousel" data-bs-slide-to="5"></button>
+          </div>
+        </div>
+        
+        <!-- Text Column -->
+        <div class="col-xxl-6 order-xxl-2 order-2">
+          <h2 class="brand-text display-2">About Us</h2>
+          <div class="text-start">
+            <p>Our regular (3 out of 4 Saturdays) off-road rides are 1.5-2 hours long - Typically along the towpath to Mytchett canal café or out towards Odiham/Greywell and other suitable routes away from traffic, these are all advertised in our <a href="https://chat.whatsapp.com/LJ1XZhB7KprApZhr4plhGD" target="_blank" role="button" class="brand-text">WhatsApp Group <i class="bi bi-box-arrow-up-right brand-text"></i></a>.</p>
+            <p>Regular Meet Point is <a href="https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA" target="_blank" class="brand-text">Google Maps <i class="bi bi-box-arrow-up-right brand-text link-icon"> </i></a>.</p>
+            <p>Once a month we also aim to offer a longer ride, please check out our <a href="#ride-diary" class="brand-text">Ride Diary</a>.</p>
+            <p>Ride style is relaxed, easy-paced social riding at 8 - 10 mph average - We wait for everyone!</p>
+            <p>We welcome all age groups, although under 18 years old riders must bring along their own adult.</p>
+            <p>Note: We also have a couple of <a href="https://app.box.com/s/yg7tl246oz2p3kvby9ugw5jj5yu1gced" target="_blank" class="brand-text">Loan Bikes <i class="bi bi-box-arrow-up-right brand-text link-icon"> </i></a> that we are happy to lend out to anyone who wants to try this.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- Where To Next Section -->
     <section id="where-to-next" class="even-sections">
@@ -1412,8 +1457,10 @@
               <div id="collapseRegular-1" class="accordion-collapse collapse" aria-labelledby="headingRegular-1">
                 <div class="accordion-body body-text">
                   <p>All dates for these rides are ONLY available via the <a href="https://chat.whatsapp.com/LJ1XZhB7KprApZhr4plhGD" target="_blank" role="button" class="brand-text">WhatsApp Group <i class="bi bi-box-arrow-up-right brand-text link-icon"> </i></a>.</p>
+                  <p>Regular Meet Point: <a href="https://maps.app.goo.gl/Rz6o6LjYwvr6974ZA" target="_blank" class="brand-text">Google Maps <i class="bi bi-box-arrow-up-right brand-text link-icon"> </i></a>.</p>
                   <p>Depart promptly at 09:30.</p>
                   <p>Ride Time : 90-120 minutes, 8-10mph.</p>
+                  <p>If driving to Meet Point, the car park is a pay car park. Alternatively park for free on Dinorben Avenue (1 minute from start): <a href="https://maps.app.goo.gl/N667QXAJJztYRDLq9" target="_blank" class="brand-text">Free Parking <i class="bi bi-box-arrow-up-right brand-text link-icon"> </i></a>.</p>
                   <p>All easy going routes.</p>
                   <p>Aim to be back in Fleet around Noon.</p>
                   <p>All of these routes offer the option of a shorter ride, please ask for advice.</p>
@@ -1948,6 +1995,31 @@
         </a>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var carousel = document.querySelector("#aboutUsCarousel");
+        var indicators = document.querySelectorAll(".carousel-indicators-container .indicator");
     
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+          // Remove active class from all indicators
+          indicators.forEach(function (indicator) {
+            indicator.classList.remove("active");
+          });
+    
+          // Add active class to the current indicator
+          indicators[event.to].classList.add("active");
+        });
+    
+        // Ensure indicator clicks also update properly
+        indicators.forEach(function (indicator, index) {
+          indicator.addEventListener("click", function () {
+            indicators.forEach((i) => i.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+
   </body>
 </html>

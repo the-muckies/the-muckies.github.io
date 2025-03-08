@@ -1,7 +1,6 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
-
 // Custom CSS Files
 @import "../scss/base/base.scss";
 @import "../scss/components/navbar.scss";
@@ -18,7 +17,7 @@
 }
 
 .about-title {
-  background-image: url('../img/group-riders.jpg');
+  background-image: url("../img/group-riders.jpg");
   background-size: cover;
   background-position: center;
   min-height: 50vw;
@@ -40,7 +39,8 @@
   color: var(--bs-warning);
 }
 
-.lead, .card-header {
+.lead,
+.card-header {
   font-size: 1.4rem !important;
 }
 
@@ -55,3 +55,42 @@ p {
 a {
   text-decoration: none;
 }
+
+  /* Ensure all carousel images have the same height */
+  .carousel-img {
+    height: 400px; /* Adjust as needed */
+    object-fit: cover;
+  }
+
+  /* Ensure responsiveness */
+  @media (max-width: 768px) {
+    .carousel-img {
+      height: 250px; /* Smaller height on mobile */
+    }
+  }
+
+  /* Custom styling for carousel indicators */
+  .carousel-indicators-container {
+    text-align: center;
+    margin-top: 10px; /* Space between the image and indicators */
+  }
+
+  .carousel-indicators-container button {
+    background-color: #555; /* Dark gray color */
+    border: none;
+    border-radius: 50%; /* Make them pill-shaped */
+    width: 15px; /* Increase size */
+    height: 15px; /* Increase size */
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .carousel-indicators-container button:hover {
+    background-color: #777;
+    transform: scale(1.2);
+  }
+
+  .carousel-indicators-container .active {
+    background-color: #ff6600; /* Highlight active slide */
+    transform: scale(1.3);
+  }
