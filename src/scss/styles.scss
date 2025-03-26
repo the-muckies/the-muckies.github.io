@@ -7,6 +7,9 @@
 @import "../scss/pages/hero.scss";
 @import "../scss/pages/contact-us.scss";
 
+// Featured Ride Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 .variable-height-section {
   height: auto;
   display: flex;
@@ -133,4 +136,120 @@ a {
 .carousel-control-next:hover {
   background-color: var(--bs-warning);
   transform: scale(1.1);
+}
+
+
+.featured-ride {
+  font-family: 'Roboto Mono' sans-serif;
+
+  width: 80%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding: 3em;
+
+  background-image: url('./img/Featured-DDOTTS-30.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px; 
+
+  color: black;
+}
+
+.ride-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.ride-tagline {
+  font-weight: 100;
+  font-size: 0.9rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.ride-date {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 0.75rem;
+}
+
+.ride-countdown-clock {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 0.75rem;
+}
+
+.display-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.clock-item {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: var(--bs-warning);
+  font-weight: bold;
+}
+
+.display-card div:first-child {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.ride-details {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.ride-details-button {
+  background-color: #ffc107;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.ride-details-button:hover {
+  background-color: #ffd740;
+}
+
+.ride-details-link a {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .ride-countdown-clock {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ride-details-button {
+    margin: 20px auto;
+    width: fit-content;
+  }
 }
