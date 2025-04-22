@@ -19,13 +19,6 @@
   box-sizing: border-box;
 }
 
-.about-title {
-  background-image: url("../img/group-riders.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 50vw;
-}
-
 .about-text {
   padding-top: 6vh;
   padding-bottom: 6vh;
@@ -149,7 +142,7 @@ a {
 
   padding: 3em;
 
-  background-image: url('./img/Featured-DDOTTS-30.jpg');
+  background-image: url('../img/Featured-DDOTTS-30.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 15px; 
